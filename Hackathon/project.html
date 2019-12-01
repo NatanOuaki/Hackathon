@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png">
+      </a>
+      <nav id="nav2">
+        <a href="index.html">Home</a>
+        <a href="project.html">Our Project</a>
+    </div>
+  </header>
+
+  <section id="project">
+    <h1>Welcome to our Project</h1>
+    <h2>The futur of instagram</h2>
+
+    <select id ="choicefilter">
+      <option value="filter" selected>Hackaton Filter 1<option>
+      <option value="filter2" >Hackaton Filter 2</option>
+      <option value="filter3">Hackaton Filter 3</option>
+  </select>
+  <br><br><br>
+ <div>
+
+  <img src="images/filter.png" id= "filter1" hidden="">
+  <img src="images/filter2.png" id= "filter2" hidden="">
+  <img src="images/filter3.png" id= "filter3" hidden="">
+</div>
+<div>
+   <video autoplay="true" id="video"></video>
+   <canvas class="d-none"></canvas>
+ </div>
+
+   <div>
+  <button id ="btn" class= "button"> Take a picture</button>
+</div>
+
+  </section>
+
+  <script >
+var video = document.querySelector("#video");
+var canvas = document.querySelector("canvas");
+var screenshot = document.getElementById("btn");
+var submitbutton = document.getElementById("submit");
+var filter_1 = document.getElementById("filter1");
+var filter_2 = document.getElementById("filter2");
+var filter_3 = document.getElementById("filter3");
+
+navigator.mediaDevices.getUserMedia({ video: true })
+   .then(function (stream) {
+     video.srcObject = stream;
+   })
+screenshot.onclick = function() {
+ canvas.width = video.videoWidth;
+ canvas.height = video.videoHeight;
+ canvas.getContext("2d").drawImage(video, 0, 0);
+};
+
+
+choicefilter.onmouseout = function() {
+  if (choicefilter.value == "filter"){
+    filter_1.hidden = false;
+    filter_2.hidden = true;
+    filter_3.hidden = true;
+  }
+  else if (choicefilter.value == "filter2"){
+    filter_2.hidden = false;
+    filter_1.hidden = true;
+    filter_3.hidden = true;
+  }
+  else if (choicefilter.value == "filter3"){
+    filter_3.hidden = false;
+    filter_1.hidden = true;
+    filter_2.hidden = true;
+  }
+}
+
+</script>
+
+  <footer id="footer">
+    <div class="inner1">
+      <h3>Get in touch</h3>
+      <a href="https://developers.institute">Contact us here</a>
+    </div>
+  </footer>
+
+</body>
+</html>

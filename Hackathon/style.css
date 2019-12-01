@@ -1,0 +1,170 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  margin:0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:17px;
+  color:white;
+  line-height:1.6;
+}
+
+#banner{
+  background: linear-gradient(
+                     rgba(20,20,20, .6),
+                     rgba(20,20,20, .6)),
+                     url( "https://videohive.img.customer.envatousercontent.com/files/239819119/preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=7976a7783f027811acb7709963d7d851");
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}
+
+#banner h1{
+  font-size:50px;
+  line-height:1.2;
+}
+
+#banner p{
+  font-size:20px;
+  color:white;
+}
+
+.button{
+  font-size:18px;
+  text-decoration:none;
+  color:#6cc091;
+  border:#6cc091 1px solid;
+  padding:10px 20px;
+  border-radius:25px;
+  margin-top:20px;
+  text-align: center;
+}
+
+#banner .button:hover{
+  background:#6cc091;
+  color:#fff;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  color: #555555;
+}
+
+.photo{
+  border-radius: 100%;
+}
+
+#footer{
+  background-color: #6cc091;
+  height: 200px;
+  margin-top: 330px;
+  text-align: center;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.inner1 {
+  padding-top: 50px;
+  color: white;
+}
+
+
+  #header {
+    color: #fff;
+    cursor: default;
+    height: 3.25em;
+    left: 0;
+    line-height: 3.25em;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    z-index: 10001;
+
+  }
+
+.inner {
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+  left: -7px;
+  position: absolute;
+  top: 6px;
+}
+
+#header a {
+  display: inline-block;
+  padding: 0 0.75em;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+    }
+
+section {
+  padding: 40px 10px;
+}
+
+section p{
+  color:#9A9A9A;
+}
+
+#project{
+
+  height: 300px;
+}
+#nav2{
+  background-color: #6cc091;
+  color: #6cc091;
+}
+
+video,canvas{
+  position: absolute;
+  z-index: 0;
+    top: 175px;
+    left: 325px;
+}
+
+#filter1{
+  opacity: 0.8;
+  z-index: 1;
+  position: relative;
+  width: 640px;
+  height: 480px;
+  top: -26px;
+  left: 325px;
+}
+
+#filter2{
+  opacity: 0.8;
+  z-index: 1;
+  position: relative;
+  width: 640px;
+  height: 480px;
+  top: -26px;
+  left: 325px;
+}
+#filter3{
+  z-index: 1;
+  position: relative;
+  width: 640px;
+  height: 480px;
+  top: -26px;
+  left: 317px;
+}
+
+
